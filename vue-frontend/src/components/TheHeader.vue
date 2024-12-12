@@ -1,8 +1,9 @@
 <template>
   <header>
     <ul>
-      <li><a>works</a></li>
-      <li><a>about</a></li>
+      <li><router-link to="/works">works</router-link></li>
+      <li><router-link to="/">&#x1f343</router-link></li>
+      <li><router-link to="/about">about</router-link></li>
     </ul>
   </header>
 </template>
@@ -11,6 +12,7 @@
 ul {
     width: 100vw;
     margin-bottom: 5rem;
+    padding: .5rem 2rem;
     position: sticky;
     top: 0;
     list-style-type: none;
@@ -18,9 +20,6 @@ ul {
     color: var(--hellblau);
     display: flex;
     flex-direction: row;
-    font-size: 50px;
-}
-li {
-    margin: .5rem;
+    justify-content: space-between;
 }
 </style>
