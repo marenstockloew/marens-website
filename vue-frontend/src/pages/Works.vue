@@ -39,5 +39,7 @@ const { result } = useQuery(gql`
 </template>
 
 <style scoped>
-
+ul {
+  list-style-type: none;
+}
 </style>

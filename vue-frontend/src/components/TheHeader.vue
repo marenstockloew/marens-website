@@ -9,8 +9,10 @@
 </template>
 
 <style scoped>
+header {
+  width: 100%;
+}
 ul {
-    width: 100vw;
     margin-bottom: 5rem;
     padding: .5rem 2rem;
     position: sticky;
