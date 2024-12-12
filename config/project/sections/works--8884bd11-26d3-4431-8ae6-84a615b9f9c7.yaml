@@ -1,0 +1,30 @@
+defaultPlacement: beginning
+enableVersioning: true
+entryTypes:
+  - eb161b0d-017a-4647-bd8a-0903d191e36e # Works
+handle: works
+maxAuthors: 1
+name: Works
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7dd3e362-d5d2-415e-aaed-53812590be80: # Maren Stockloew
+    enabledByDefault: true
+    hasUrls: true
+    template: works.twig
+    uriFormat: 'works/{slug}'
+structure:
+  maxLevels: null
+  uid: 1d60c354-4cc4-43e4-9006-6e7d87b8159c
+type: structure

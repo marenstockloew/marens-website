@@ -1,0 +1,21 @@
+{% extends "index.twig" %}
+
+{% block content %}
+
+{% set works = craft.entries.section('works').all() %}
+
+	<h1>
+		Overview
+	</h1>
+
+	{% for work in works %}
+
+	{% set photo = work.mainImage.one() %}
+
+	<h2>{{work.title}}</h2>
+	<img src="{{photo.url}}">
+	<p>{{work.description}}</p>
+
+	{% endfor %}
+
+{% endblock %}

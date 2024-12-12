@@ -1,0 +1,8 @@
+isPublic: true
+name: 'Public Schema'
+scope:
+  - 'sites.7dd3e362-d5d2-415e-aaed-53812590be80:read' # Maren Stockloew
+  - 'sections.23d4a548-cc01-4c65-88d6-357e8bf9ab03:read' # Home
+  - 'sections.85e6efbc-d153-40ca-ae05-3328484347df:read' # Maren
+  - 'sections.8884bd11-26d3-4431-8ae6-84a615b9f9c7:read' # Works
+  - 'volumes.52d52080-5a3c-441e-b914-e2358048e571:read' # Images

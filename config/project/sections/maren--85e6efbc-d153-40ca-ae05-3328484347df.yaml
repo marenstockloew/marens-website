@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - ae30c4b0-e3e5-42b9-95ad-81c483027d05 # Maren-Description
+handle: maren
+maxAuthors: 1
+name: Maren
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7dd3e362-d5d2-415e-aaed-53812590be80: # Maren Stockloew
+    enabledByDefault: true
+    hasUrls: true
+    template: maren.twig
+    uriFormat: maren
+type: single

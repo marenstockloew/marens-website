@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  3a874071-908f-4e2e-a8f2-c27f4235c5bc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-11-09T20:33:59+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 05c91603-3027-4f62-b486-3c10ad28a83f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5cf27fcf-1a43-4030-bc9e-ac6ad60883b9
+        userCondition: null
+handle: marenDescription
+hasTitleField: true
+icon: ''
+name: Maren-Description
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

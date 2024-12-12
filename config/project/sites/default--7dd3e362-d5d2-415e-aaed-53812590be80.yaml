@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'Maren Stockloew'
+primary: true
+siteGroup: db0da511-ac83-4cbc-8b72-9059a42b9c27 # Maren Stockloew
+sortOrder: 1
