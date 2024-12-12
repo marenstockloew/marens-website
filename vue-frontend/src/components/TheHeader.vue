@@ -24,4 +24,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
 }
+ul a{
+  color: var(--hellblau);
+}
 </style>

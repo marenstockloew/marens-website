@@ -8,9 +8,14 @@
     url("./fonts/terminal-grotesque-webfont.woff2") format("woff2");
 }
 
-/* font and color variables */
+/* text variables */
 :root {
   --base-text: terminalGrotesque;
+  --font-main: 20px;
+}
+
+/* color variables */
+:root {
   --hell: #fefefc;
   --hellblau: #b4b5c9;
   --rosa: #ffd1c7;
@@ -41,7 +46,7 @@ body {
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.5;
   font-family: var(--base-text), sans-serif;
-  font-size: 24px;
+  font-size: var(--font-main);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
