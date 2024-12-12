@@ -11,12 +11,13 @@
 <style scoped>
 header {
   width: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
 }
 ul {
     margin-bottom: 5rem;
     padding: .5rem 2rem;
-    position: sticky;
-    top: 0;
     list-style-type: none;
     background-color: var(--dunkel);
     color: var(--hellblau);
