@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 2e66a0a9-7e7f-40b9-81b7-65f65b6ccdbb # Home Title
+  - 2e66a0a9-7e7f-40b9-81b7-65f65b6ccdbb # Home
 handle: home
 maxAuthors: 1
 name: Home

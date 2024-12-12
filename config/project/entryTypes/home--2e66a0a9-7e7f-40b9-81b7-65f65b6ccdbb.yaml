@@ -25,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,17 +35,49 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2024-12-12T22:09:48+00:00'
+            elementCondition: null
+            fieldUid: a3cd7fd4-adda-4bd5-ad5e-f3ca6b60f9fa # Home Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e358230-9223-474f-b5fb-8229331fca23
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-12T22:09:48+00:00'
+            elementCondition: null
+            fieldUid: 982a374f-5ed2-4c17-8d44-3a783aafbbdb # Home Highlighted
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5daa451d-792c-4b30-b0f9-6c561f044cca
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: b7108049-e148-4c2c-81ad-9cb726026f6d
         userCondition: null
-handle: homeTitle
+handle: home
 hasTitleField: true
-icon: ''
-name: 'Home Title'
+icon: null
+name: Home
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
