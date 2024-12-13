@@ -3,6 +3,8 @@
     <base target="_blank" />
   </head>
 
+  <home-sketch></home-sketch>
+
   <div class="home-imagewrapper">
     <img
       src="../assets/background.jpg"
@@ -23,7 +25,7 @@
 <script setup>
 import { useQuery } from "@vue/apollo-composable";
 import { gql } from "graphql-tag";
-import { p5 } from "p5";
+import HomeSketch from "@/components/HomeSketch.vue";
 
 const { result } = useQuery(gql`
   query home {
@@ -38,6 +40,7 @@ const { result } = useQuery(gql`
     }
   }
 `);
+
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -53,6 +56,7 @@ function scrollToTop() {
   position: fixed;
   right: 0;
   bottom: 2rem;
+  z-index: 10;
 }
 .home-text * {
   color: var(--hell);

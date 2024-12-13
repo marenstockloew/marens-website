@@ -11,7 +11,7 @@
 /* text variables */
 :root {
   --base-text: terminalGrotesque;
-  --font-main: 20px;
+  --font-main: 18px;
 }
 
 /* color variables */
@@ -44,6 +44,7 @@
 body {
   color: var(--color-text);
   background: var(--color-background);
+  overflow-x: hidden;
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.5;
   font-family: var(--base-text), sans-serif;

@@ -9,3 +9,9 @@ I am using Craft CMS with the GraphQL API as a headless backend and vuejs as a f
 ## orga
 
 There's the landing page, the 'works' and the 'about' section.
+
+# INFORMATION SOURCES
+
+## Including p5 Sketch
+
+https://medium.com/front-end-weekly/learning-the-p5-canvas-drawing-library-in-es6-and-webpack-bf514a679544
