@@ -5,7 +5,7 @@ import p5 from "p5";
 
 let s = (sk) => {
   sk.setup = () => {
-    sk.createCanvas(window.innerWidth, window.innerHeight);
+    sk.createCanvas(document.body.clientWidth, window.innerHeight);
   };
   let task_done = false;
   let last_done = 0;
@@ -22,7 +22,7 @@ let s = (sk) => {
     }
   };
   sk.mousePressed = () => {
-    sk.createCanvas(window.innerWidth, window.innerHeight);
+    sk.createCanvas(document.body.clientWidth, window.innerHeight);
   };
   sk.display = () => {
     sk.fill(255, 255, 255, 70);

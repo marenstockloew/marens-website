@@ -24,8 +24,3 @@ a {
     place-items: center;
   }
 }
-
-.content {
-  max-width: 800px;
-  margin: 7.5rem auto;
-}

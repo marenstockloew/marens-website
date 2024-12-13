@@ -2,9 +2,8 @@
   <div class="content">
     <ul v-if="result && result.entries">
       <li v-for="entry of result.entries" :key="entry.id">
+        <img :src="entry.mainImage[0].url" class="mainImage" />
         <h2>{{ entry.title }}</h2>
-        <!-- <img src="{{entry.mainImage[url]}}"> -->
-        <img :src="entry.mainImage[0].url" style="width: 200px" />
         <p>{{ entry.description }}</p>
       </li>
     </ul>
@@ -39,5 +38,12 @@ const { result } = useQuery(gql`
 <style scoped>
 ul {
   list-style-type: none;
+}
+.mainImage {
+  width: 80%;
+}
+.content {
+  width: 100vw;
+  margin: 7.5rem 0;
 }
 </style>
