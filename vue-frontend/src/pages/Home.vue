@@ -66,6 +66,7 @@ function scrollToTop() {
   cursor: pointer;
 }
 .home-imagewrapper {
+  background-color: white;
   position: absolute;
   width: 100%;
   top: 0;
