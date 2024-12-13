@@ -19,7 +19,7 @@ ul {
     margin-bottom: 5rem;
     padding: .5rem 2rem;
     list-style-type: none;
-    background-color: var(--dunkel);
+    background-color: var(--dunkel-opacity);
     color: var(--hellblau);
     display: flex;
     flex-direction: row;

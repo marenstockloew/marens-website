@@ -1,4 +1,8 @@
 <template>
+  <head>
+    <base target="_blank" />
+  </head>
+
   <div class="home-imagewrapper">
     <img
       src="../assets/background.jpg"
@@ -9,7 +13,9 @@
 
   <div v-if="result" class="home-container">
     <div v-html="result.entries[0].homeText" class="home-text"></div>
-    <div class="home-highlighted" @click="scrollToTop">{{ result.entries[0].homeHighlighted }}</div>
+    <div class="home-highlighted" @click="scrollToTop">
+      {{ result.entries[0].homeHighlighted }}
+    </div>
   </div>
   <div v-else>Maren Stocklöw</div>
 </template>
@@ -17,6 +23,7 @@
 <script setup>
 import { useQuery } from "@vue/apollo-composable";
 import { gql } from "graphql-tag";
+import { p5 } from "p5";
 
 const { result } = useQuery(gql`
   query home {
@@ -33,11 +40,11 @@ const { result } = useQuery(gql`
 `);
 function scrollToTop() {
   window.scrollTo({
-  top: 0,
-  left: 0,
-  behavior: "smooth",
-});
-  }
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+}
 </script>
 
 <style scoped>
@@ -54,16 +61,14 @@ function scrollToTop() {
   color: var(--roetlich);
   cursor: pointer;
 }
-.home-imagewrapper{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 0;
+.home-imagewrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 0;
 }
-.home-bgimg{
-    width: 100%;
-    object-fit: cover;
-
+.home-bgimg {
+  width: 100%;
+  object-fit: cover;
 }
-
 </style>
