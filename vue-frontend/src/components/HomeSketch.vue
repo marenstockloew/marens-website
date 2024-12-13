@@ -22,8 +22,7 @@ let s = (sk) => {
     }
   };
   sk.mousePressed = () => {
-    // sk.createCanvas(window.innerWidth, window.innerHeight);
-    sk.remove();
+    sk.createCanvas(window.innerWidth, window.innerHeight);
   };
   sk.display = () => {
     sk.fill(255, 255, 255, 70);

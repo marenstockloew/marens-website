@@ -1,12 +1,18 @@
 <template>
   <header>
     <ul>
-      <li><router-link to="/works">works</router-link></li>
+      <li><router-link to="/works" @click="removeCanvas">works</router-link></li>
       <li><router-link to="/">&#x1f343</router-link></li>
-      <li><router-link to="/about">about</router-link></li>
+      <li><router-link to="/about" @click="removeCanvas">about</router-link></li>
     </ul>
   </header>
 </template>
+
+<script setup>
+const removeCanvas = () =>{
+  document.querySelectorAll('canvas').forEach(e => e.remove());
+}
+</script>
 
 <style scoped>
 header {
