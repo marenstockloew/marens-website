@@ -39,11 +39,27 @@ const { result } = useQuery(gql`
 ul {
   list-style-type: none;
 }
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7.5rem;
+}
 .mainImage {
-  width: 80%;
+  width: 50%;
+  aspect-ratio: 7/5 ;
+  object-fit: cover;
+  border-radius: .15rem;
+  opacity: .9;
+}
+h2 {
+  margin: 2rem;
+}
+p {
+  width: 70ch;
 }
 .content {
-  width: 100vw;
-  margin: 7.5rem 0;
+  margin: 7.5rem auto;
 }
 </style>

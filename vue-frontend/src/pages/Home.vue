@@ -75,5 +75,6 @@ function scrollToTop() {
 .home-bgimg {
   width: 100%;
   object-fit: cover;
+  opacity: .85;
 }
 </style>
