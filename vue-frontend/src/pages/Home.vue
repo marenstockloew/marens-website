@@ -1,7 +1,4 @@
 <template>
-  <head>
-    <base target="_blank" />
-  </head>
 
   <home-sketch></home-sketch>
 
@@ -57,6 +54,8 @@ function scrollToTop() {
   right: 0;
   bottom: 2rem;
   z-index: 10;
+  /* font-size: 1.5rem; */
+  /* font-family: var(--header-font), sans-serif; */
 }
 .home-text * {
   color: var(--hell);

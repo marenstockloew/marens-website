@@ -29,6 +29,9 @@ let s = (sk) => {
     sk.textSize(80);
     sk.text("\u{2601}", sk.mouseX, sk.mouseY);
   };
+  sk.windowResized = () => {
+        sk.setup()
+     }
 };
 
 const P5 = new p5(s);

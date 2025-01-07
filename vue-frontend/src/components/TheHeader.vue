@@ -2,7 +2,7 @@
   <header>
     <ul>
       <li><router-link to="/works" @click="removeCanvas">works</router-link></li>
-      <li><router-link to="/">&#x1f343</router-link></li>
+      <li><a href="/">&#x1f343</a></li>
       <li><router-link to="/about" @click="removeCanvas">about</router-link></li>
     </ul>
   </header>
@@ -20,18 +20,19 @@ header {
   z-index: 100;
   position: fixed;
   top: 0;
+  height: 2.5rem;
+  font-family: var(--header-font), sans-serif;
 }
 ul {
     margin-bottom: 5rem;
     padding: .5rem 2rem;
     list-style-type: none;
-    background-color: var(--dunkel-opacity);
-    color: var(--hellblau);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 2.5rem;
 }
 ul a{
-  color: var(--hellblau);
+  color: var(--hell);
 }
 </style>
