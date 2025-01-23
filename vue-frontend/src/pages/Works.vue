@@ -3,7 +3,7 @@
     <ul v-if="result && result.entries">
       <li v-for="entry of result.entries" :key="entry.id">
         <img :src="entry.mainImage[0].url" class="mainImage" />
-        <h2><a href="entry.url">{{ entry.title }}</a></h2>
+        <h2><router-link :to="'/works/'+entry.slug" class="work-link">{{ entry.title }}</router-link></h2>
         <p>{{ entry.description }}</p>
       </li>
     </ul>
@@ -21,7 +21,9 @@ const { result } = useQuery(gql`
       id
       title
       url
+      slug
       ... on works_Entry {
+        url
         description
         mainImage {
           url
@@ -58,5 +60,9 @@ h2 {
 }
 canvas {
   display: none !important;
+}
+.work-link:hover {
+  text-decoration: none;
+  font-weight: bold;
 }
 </style>
