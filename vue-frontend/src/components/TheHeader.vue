@@ -1,9 +1,9 @@
 <template>
   <header>
-    <ul>
-      <li><router-link to="/works" @click="removeCanvas">works</router-link></li>
-      <li><a href="/">&#x1f343</a></li>
-      <li><router-link to="/about" @click="removeCanvas">about</router-link></li>
+    <ul class="header-list">
+      <li class="big"><router-link to="/works" @click="removeCanvas">works</router-link></li>
+      <li class="center"><a href="/">&#x1f343</a></li>
+      <li class="big right"><router-link to="/about" @click="removeCanvas">about</router-link></li>
     </ul>
   </header>
 </template>
@@ -20,19 +20,40 @@ header {
   z-index: 100;
   position: fixed;
   top: 0;
-  height: 2.5rem;
   font-family: var(--header-font), sans-serif;
 }
-ul {
+.header-list {
     margin-bottom: 5rem;
     padding: .5rem 2rem;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 2.5rem;
+    align-items: center;
+    font-size: 2rem;
 }
-ul a{
+.header-list a {
   color: var(--hell);
+}
+.header-list li {
+ width: 20vw;
+ display: flex;
+ flex-direction: row;
+}
+.header-list a:hover {
+  text-decoration: none;
+  font-family: var(--header-hover), sans-serif;
+}
+.big {
+  font-size: 4.5rem;
+}
+.center {
+  justify-content: center;
+}
+.center:hover {
+  font-size: 120%;
+}
+.right {
+  justify-content: right;
 }
 </style>

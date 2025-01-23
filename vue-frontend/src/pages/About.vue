@@ -1,7 +1,7 @@
 <template>
-  <div class="content">
+  <div v-if="result" class="content">
     <h2>{{ result.entries[0].title }}</h2>
-    <p>{{ result.entries[0].aboutDescription }}</p>
+    <div v-html="result.entries[0].aboutDescription" class="text"></div>
   </div>
 </template>
 
@@ -24,7 +24,7 @@ const { result } = useQuery(gql`
 </script>
 
 <style scoped>
-.content {
-  margin: 7.5rem auto;
+canvas {
+  display: none;
 }
 </style>

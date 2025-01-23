@@ -49,20 +49,22 @@ function scrollToTop() {
 
 <style scoped>
 .home-container {
-  width: 60vw;
+  width: 80vw;
   position: fixed;
   right: 0;
   bottom: 2rem;
   z-index: 10;
-  /* font-size: 1.5rem; */
-  /* font-family: var(--header-font), sans-serif; */
 }
 .home-text * {
   color: var(--hell);
+  font-size: 1.25rem;
+  font-family: var(--home-font), sans-serif;
 }
 .home-highlighted {
   color: var(--roetlich);
   cursor: pointer;
+  font-size: 1.25rem;
+  font-family: var(--home-font), sans-serif;
 }
 .home-imagewrapper {
   background-color: white;

@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div v-if="result" class="content">
     <ul v-if="result && result.entries">
       <li v-for="entry of result.entries" :key="entry.id">
         <img :src="entry.mainImage[0].url" class="mainImage" />
@@ -47,7 +47,7 @@ li {
   margin-bottom: 7.5rem;
 }
 .mainImage {
-  width: 50%;
+  width: 100%;
   aspect-ratio: 7/5 ;
   object-fit: cover;
   border-radius: .15rem;
@@ -56,10 +56,7 @@ li {
 h2 {
   margin: 2rem;
 }
-p {
-  width: 70ch;
-}
-.content {
-  margin: 7.5rem auto;
+canvas {
+  display: none !important;
 }
 </style>

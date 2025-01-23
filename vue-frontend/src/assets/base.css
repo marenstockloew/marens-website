@@ -3,20 +3,45 @@
 @font-face {
   font-family: terminalGrotesque;
   src: url("./fonts/terminal-grotesque-webfont.eot");
-  src: url("./fonts/terminal-grotesque-webfont.otf") format("opentype"),
+  src: url("./fonts/terminal-grotesque-webfont.ttf") format("truetype"),
     url("./fonts/terminal-grotesque-webfont.woff") format("woff"),
     url("./fonts/terminal-grotesque-webfont.woff2") format("woff2");
 }
 @font-face {
-  font-family: movement;
-  src: url("./fonts/Movement-IndirectThin.otf") format("opentype");
-  src: url("./fonts/Movement-IndirectThin.woff2") format("woff2");
+  font-family: terminalGrotesqueOpen;
+  src: url("./fonts/terminal-grotesque_open.otf") format("opentype"),
+}
+@font-face {
+  font-family: openSans;
+  src: url("./fonts/OpenSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: openSans;
+  src: url("./fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: openSansRegular;
+  src: url("./fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: openSans;
+  src: url("./fonts/OpenSans-LightItalic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: openSans;
+  src: url("./fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
 }
 
 /* text variables */
 :root {
-  --base-font: terminalGrotesque;
-  --header-font: movement;
+  --base-font: openSans;
+  --header-font: terminalGrotesque;
+  --header-hover: terminalGrotesqueOpen;
+  --home-font: openSans;
   --font-main: 18px;
 }
 
@@ -52,6 +77,7 @@ body {
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.5;
+  letter-spacing: 0.025rem;
   font-family: var(--base-font), sans-serif;
   font-size: var(--font-main);
   text-rendering: optimizeLegibility;

@@ -1,4 +1,4 @@
-dateModified: 1734042045
+dateModified: 1736334291
 email:
   fromEmail: m.stockloew@posteo.de
   fromName: 'Maren Stockloew'
@@ -25,6 +25,7 @@ meta:
     a93c6dfd-51a9-4a7c-892e-17f9507ceebf: 'Main Image' # Main Image
     ae30c4b0-e3e5-42b9-95ad-81c483027d05: Maren-Description # Maren-Description
     b4f4cfbe-6ace-4e6d-a8ad-5ce04778a573: 'Public Schema' # Public Schema
+    b9a7fc8a-cc72-4eaf-a3cf-58894d45546c: 'About Description' # About Description
     db0da511-ac83-4cbc-8b72-9059a42b9c27: 'Maren Stockloew' # Maren Stockloew
     eb161b0d-017a-4647-bd8a-0903d191e36e: Works # Works
     f30d7b9a-a104-45e7-ba60-97fc21dd8bee: Simple # Simple

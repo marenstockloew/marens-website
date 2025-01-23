@@ -6,9 +6,26 @@
   font-weight: normal;
 }
 
+.content {
+  margin: 10rem auto;
+  width: 70ch
+}
+
 a {
   text-decoration: none;
-  color: var(--dunkel);
+  color: var(--color-text);
+}
+
+p {
+  margin: .5rem 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: 1rem;
 }
 
 @media (hover: hover) {
