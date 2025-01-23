@@ -24,7 +24,7 @@ const { result } = useQuery(gql`
 </script>
 
 <style scoped>
-canvas {
-  display: none;
+.p5canvas {
+  display: none !important;
 }
 </style>

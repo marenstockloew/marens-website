@@ -2,7 +2,7 @@
   <header>
     <ul class="header-list">
       <li class="big"><router-link to="/works" @click="removeCanvas">works</router-link></li>
-      <li class="center"><a href="/">&#x1f343</a></li>
+      <li class="center"><router-link to="/">&#x1f343</router-link></li>
       <li class="big right"><router-link to="/about" @click="removeCanvas">about</router-link></li>
     </ul>
   </header>

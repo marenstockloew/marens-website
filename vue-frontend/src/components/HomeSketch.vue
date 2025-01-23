@@ -2,6 +2,9 @@
 
 <script setup>
 import p5 from "p5";
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 let s = (sk) => {
   sk.setup = () => {
@@ -22,7 +25,10 @@ let s = (sk) => {
     }
   };
   sk.mousePressed = () => {
-    sk.createCanvas(document.body.clientWidth, window.innerHeight);
+    let currentRoute = router.currentRoute.value.fullPath;
+    if (currentRoute == "/") {
+      sk.createCanvas(document.body.clientWidth, window.innerHeight);
+    }
   };
   sk.display = () => {
     sk.fill(255, 255, 255, 70);
@@ -45,5 +51,6 @@ canvas {
   margin: 0;
   padding: 0;
   z-index: 1;
+  max-width: 100%;
 }
 </style>
