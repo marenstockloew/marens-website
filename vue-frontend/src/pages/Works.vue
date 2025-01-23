@@ -20,10 +20,8 @@ const { result } = useQuery(gql`
     entries(section: "works") {
       id
       title
-      url
       slug
       ... on works_Entry {
-        url
         description
         mainImage {
           url
