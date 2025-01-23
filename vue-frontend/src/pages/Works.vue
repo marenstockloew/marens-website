@@ -3,7 +3,7 @@
     <ul v-if="result && result.entries">
       <li v-for="entry of result.entries" :key="entry.id">
         <img :src="entry.mainImage[0].url" class="mainImage" />
-        <h2>{{ entry.title }}</h2>
+        <h2><a href="entry.url">{{ entry.title }}</a></h2>
         <p>{{ entry.description }}</p>
       </li>
     </ul>
