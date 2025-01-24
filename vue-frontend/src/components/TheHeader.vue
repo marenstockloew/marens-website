@@ -21,9 +21,9 @@ header {
   position: fixed;
   top: 0;
   font-family: var(--header-font), sans-serif;
+  margin-bottom: 5rem;
 }
 .header-list {
-    margin-bottom: 5rem;
     padding: .5rem 2rem;
     list-style-type: none;
     display: flex;
