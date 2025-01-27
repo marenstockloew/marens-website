@@ -3,7 +3,6 @@
     <ul v-if="result && result.entries">
       <li v-for="entry of result.entries" :key="entry.id">
         <img :src="entry.mainImage[0].url" class="mainImage" />
-        <!-- <h2><router-link :to="'/works/'+entry.slug" class="work-link">{{ entry.title }}</router-link></h2> -->
         <h2>
           <router-link
             :to="{ name: 'WorkDetails', params: { slug: entry.slug } }"
@@ -18,10 +17,8 @@
 </template>
 
 <script setup>
-// import { watch } from "vue";
 import { useQuery } from "@vue/apollo-composable";
 import { gql } from "graphql-tag";
-import WorkDetails from "./WorkDetails.vue";
 
 const { result } = useQuery(gql`
   query works {
@@ -38,9 +35,6 @@ const { result } = useQuery(gql`
     }
   }
 `);
-// watch(() => {
-// console.log(result.value.entries[0].mainImage[0].url);
-// });
 </script>
 
 <style scoped>

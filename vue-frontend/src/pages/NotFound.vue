@@ -3,7 +3,7 @@
     <h2>Page not found</h2>
     <div class="text">
       It seems like you have entered an invalid URL.
-      <router-link to="/">Go back to homepage</router-link>.
+      <router-link :to="{name: 'Home'}">Go back to homepage</router-link>.
     </div>
   </div>
 </template>
