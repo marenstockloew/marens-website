@@ -3,7 +3,14 @@
     <ul v-if="result && result.entries">
       <li v-for="entry of result.entries" :key="entry.id">
         <img :src="entry.mainImage[0].url" class="mainImage" />
-        <h2><router-link :to="'/works/'+entry.slug" class="work-link">{{ entry.title }}</router-link></h2>
+        <!-- <h2><router-link :to="'/works/'+entry.slug" class="work-link">{{ entry.title }}</router-link></h2> -->
+        <h2>
+          <router-link
+            :to="{ name: 'WorkDetails', params: { slug: entry.slug } }"
+            class="work-link"
+            >{{ entry.title }}</router-link
+          >
+        </h2>
         <p>{{ entry.description }}</p>
       </li>
     </ul>
@@ -14,6 +21,7 @@
 // import { watch } from "vue";
 import { useQuery } from "@vue/apollo-composable";
 import { gql } from "graphql-tag";
+import WorkDetails from "./WorkDetails.vue";
 
 const { result } = useQuery(gql`
   query works {
@@ -48,10 +56,10 @@ li {
 }
 .mainImage {
   width: 100%;
-  aspect-ratio: 7/5 ;
+  aspect-ratio: 7/5;
   object-fit: cover;
-  border-radius: .15rem;
-  opacity: .9;
+  border-radius: 0.15rem;
+  opacity: 0.9;
 }
 h2 {
   margin: 2rem;

@@ -6,11 +6,10 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  workShown: String
-})
 
-console.log('Props: ' + props.foo)
+const props = defineProps(["slug"]);
+const currentSlug = props.slug;
+console.log("Slug: " + currentSlug);
 </script>
 
 <style scoped>

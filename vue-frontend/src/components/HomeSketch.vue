@@ -2,9 +2,8 @@
 
 <script setup>
 import p5 from "p5";
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
+import { useRoute } from 'vue-router';
+const route = useRoute();
 
 let s = (sk) => {
   sk.setup = () => {
@@ -25,8 +24,8 @@ let s = (sk) => {
     }
   };
   sk.mousePressed = () => {
-    let currentRoute = router.currentRoute.value.fullPath;
-    if (currentRoute == "/") {
+    let currentRouteName = route.name;
+    if (currentRouteName == "Home") {
       sk.createCanvas(document.body.clientWidth, window.innerHeight);
     }
   };
