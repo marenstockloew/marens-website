@@ -39,8 +39,8 @@
 /* text variables */
 :root {
   --base-font: openSans;
-  --header-font: terminalGrotesque;
-  --header-hover: terminalGrotesqueOpen;
+  --header-font: terminalGrotesqueOpen;
+  --header-hover: terminalGrotesque;
   --home-font: openSans;
   --font-main: 18px;
 }

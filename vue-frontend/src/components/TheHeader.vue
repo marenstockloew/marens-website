@@ -1,9 +1,9 @@
 <template>
   <header>
     <ul class="header-list">
-      <li class="big"><router-link to="/works" @click="removeCanvas">works</router-link></li>
-      <li class="center"><router-link to="/">&#x1f343</router-link></li>
-      <li class="big right"><router-link to="/about" @click="removeCanvas">about</router-link></li>
+      <li class="big"><router-link :to="{ name: 'Works' }" @click="removeCanvas">works</router-link></li>
+      <li class="center"><router-link :to="{ name: 'Home' }">&#x1f343</router-link></li>
+      <li class="big right"><router-link :to="{ name: 'About' }" @click="removeCanvas">about</router-link></li>
     </ul>
   </header>
 </template>
@@ -33,7 +33,7 @@ header {
     font-size: 2rem;
 }
 .header-list a {
-  color: var(--hell);
+  color: var(--hellblau);
 }
 .header-list li {
  width: 20vw;
@@ -43,6 +43,11 @@ header {
 .header-list a:hover {
   text-decoration: none;
   font-family: var(--header-hover), sans-serif;
+  color: var(--hell);
+}
+a.router-link-exact-active {
+  font-family: var(--header-hover), sans-serif;
+  color: var(--hell);
 }
 .big {
   font-size: 4.5rem;

@@ -5,6 +5,14 @@
   </div>
 </template>
 
+<script setup>
+const props = defineProps({
+  workShown: String
+})
+
+console.log('Props: ' + props.foo)
+</script>
+
 <style scoped>
 .p5canvas {
   display: none !important;
