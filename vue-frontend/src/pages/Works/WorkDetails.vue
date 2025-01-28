@@ -6,21 +6,22 @@
       <p>{{ result.entries[0].description }}</p>
     </div>
   </div>
-  <!-- <div v-else class="content"> Could not find this artwork. <router-link :to="{name: 'Works'}">Go back to overview</router-link>.</div> -->
-  <div v-else class="content">{{ result }}</div>
+  <div v-else class="content"> Could not find this artwork. <router-link :to="{name: 'Works'}">Go back to overview</router-link>.</div>
 </template>
 
 <script setup>
+// https://apollo.vuejs.org/guide-composable/query
+// CAREFUL: Craft wants a [String] as variable type
+
 import { useQuery } from "@vue/apollo-composable";
 import { gql } from "graphql-tag";
 
 const props = defineProps(["slug"]);
 const currentSlug = props.slug;
-console.log("Slug: " + currentSlug);
 
-const { result } = useQuery(
+const { result, variables } = useQuery(
   gql`
- query workDetails ($slug: [String]){
+    query workDetails($slug: [String]) {
       entries(slug: $slug) {
         id
         title
@@ -33,9 +34,15 @@ const { result } = useQuery(
         }
       }
     }
-  `,
-  {"slug": "indigo-and-orange"}
+  `
 );
+function selectCurrentSlug(slug) {
+  variables.value = {
+    slug,
+  };
+}
+
+selectCurrentSlug(currentSlug);
 </script>
 
 <style scoped>
