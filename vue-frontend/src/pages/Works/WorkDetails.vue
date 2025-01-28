@@ -6,7 +6,8 @@
       <p>{{ result.entries[0].description }}</p>
     </div>
   </div>
-  <div v-else class="content"> Could not find this artwork. <router-link :to="{name: 'Works'}">Go back to overview</router-link>.</div>
+  <!-- <div v-else class="content"> Could not find this artwork. <router-link :to="{name: 'Works'}">Go back to overview</router-link>.</div> -->
+  <div v-else class="content">{{ result }}</div>
 </template>
 
 <script setup>
@@ -17,21 +18,24 @@ const props = defineProps(["slug"]);
 const currentSlug = props.slug;
 console.log("Slug: " + currentSlug);
 
-const { result } = useQuery(gql`
-  query works {
-    entries(section: "works", slug: "bedeckt-oder-betrübt") {
-      id
-      title
-      slug
-      ... on works_Entry {
-        description
-        mainImage {
-          url
+const { result } = useQuery(
+  gql`
+ query workDetails ($slug: [String]){
+      entries(slug: $slug) {
+        id
+        title
+        slug
+        ... on works_Entry {
+          description
+          mainImage {
+            url
+          }
         }
       }
     }
-  }
-`);
+  `,
+  {"slug": "indigo-and-orange"}
+);
 </script>
 
 <style scoped>
