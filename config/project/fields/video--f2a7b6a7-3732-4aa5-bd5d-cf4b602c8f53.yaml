@@ -1,26 +1,26 @@
 columnSuffix: null
-handle: mainImage
+handle: video
 instructions: null
-name: 'Main Image'
+name: video
 searchable: false
 settings:
   allowSelfRelations: false
-  allowSubfolders: true
+  allowSubfolders: false
   allowUploads: true
   allowedKinds:
-    - image
+    - video
   branchLimit: null
   defaultUploadLocationSource: 'volume:52d52080-5a3c-441e-b914-e2358048e571' # Images
-  defaultUploadLocationSubpath: null
+  defaultUploadLocationSubpath: '/{owner.slug}'
   maintainHierarchy: false
-  maxRelations: null
+  maxRelations: 1
   minRelations: null
   previewMode: full
   restrictFiles: true
-  restrictLocation: true
-  restrictedDefaultUploadSubpath: works
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:52d52080-5a3c-441e-b914-e2358048e571' # Images
-  restrictedLocationSubpath: '/{slug}'
+  restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
   showSiteMenu: true

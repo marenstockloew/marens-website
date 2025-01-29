@@ -1,0 +1,40 @@
+columnSuffix: null
+handle: details
+instructions: 'Here you can add more information.'
+name: Details
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - e3914e52-af22-4ecb-871c-8433ba2a5ee1 # Date
+    -
+      __assoc__:
+        -
+          - uid
+          - 3ee036a1-9422-4ec2-946f-87118d2c4ecb # Additional Text
+    -
+      __assoc__:
+        -
+          - uid
+          - 37af82c0-aca2-4be3-ae9e-16b04c19e51e # Photo Documentation
+    -
+      __assoc__:
+        -
+          - uid
+          - 55a4d3e9-1cc7-41d1-9db1-3606e577b4ed # Video Documentation
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

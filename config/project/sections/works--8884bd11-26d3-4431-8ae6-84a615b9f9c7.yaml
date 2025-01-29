@@ -1,7 +1,8 @@
 defaultPlacement: beginning
 enableVersioning: true
 entryTypes:
-  - eb161b0d-017a-4647-bd8a-0903d191e36e # Works
+  -
+    uid: eb161b0d-017a-4647-bd8a-0903d191e36e # Works
 handle: works
 maxAuthors: 1
 name: Works

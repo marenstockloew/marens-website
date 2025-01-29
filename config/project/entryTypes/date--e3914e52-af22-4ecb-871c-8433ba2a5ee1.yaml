@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  ae142d20-e0c8-4704-a551-55772a4b4290:
+  d26dc4bf-8333-4978-b105-f383551cdd12:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-11-09T20:37:51+00:00'
+            dateAdded: '2025-01-29T13:37:38+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,14 +31,14 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 77b51b65-485e-4d2f-a5fc-1835223021ff
+            uid: cbb09bcf-1696-4922-a2dc-547a8cac6645
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-11-09T21:03:57+00:00'
+            dateAdded: '2025-01-29T13:40:32+00:00'
             elementCondition: null
-            fieldUid: a93c6dfd-51a9-4a7c-892e-17f9507ceebf # Main Image
+            fieldUid: e85b1053-409d-4874-8136-0253a2c94862 # Publishing or Showcase Date
             handle: null
             includeInCards: false
             instructions: null
@@ -47,12 +47,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 12f99f97-e1c4-4432-9e6d-31744328c1de
+            uid: f45c2232-7e93-4465-b46b-6e89341eda4f
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-11-09T21:03:57+00:00'
+            dateAdded: '2025-01-29T13:41:43+00:00'
             elementCondition: null
             fieldUid: 7a9eddca-3108-4430-9030-e003f11e45c5 # Description
             handle: null
@@ -63,20 +63,14 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 469c107c-faa6-4cef-9607-02f3de8bcece
+            uid: 57229dcb-6d15-418d-88f3-4a08cfdf73e4
             userCondition: null
             warning: null
             width: 100
-        name: Overview
-        uid: 91d27345-eab1-43b9-be85-6c57bbe78274
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
           -
-            dateAdded: '2025-01-29T13:41:02+00:00'
+            dateAdded: '2025-01-29T14:06:19+00:00'
             elementCondition: null
-            fieldUid: 115cb64b-38a7-436d-b61a-9785f72c8632 # Details
+            fieldUid: da68aa9e-9c82-430e-9938-1f3eb161981c # External Links
             handle: null
             includeInCards: false
             instructions: null
@@ -85,17 +79,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f2610ad2-5ae7-4a98-a770-3678f3a7831b
+            uid: 0d44ce28-26b8-4386-be0e-c42be95d235c
             userCondition: null
             warning: null
             width: 100
-        name: Details
-        uid: 6064141a-3305-4b11-93f6-c8f4790942f6
+        name: Content
+        uid: e77be274-a61a-4fd2-9d21-85114c0681ea
         userCondition: null
-handle: works
+handle: date
 hasTitleField: true
 icon: null
-name: Works
+name: Date
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

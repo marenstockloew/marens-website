@@ -1,0 +1,67 @@
+color: null
+fieldLayouts:
+  a799bb3f-a22c-4a92-8e73-284c29718d56:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-29T13:58:36+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1616d38c-ce2b-4cd5-aab5-c2b38bed61cb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-29T14:00:30+00:00'
+            elementCondition: null
+            fieldUid: f2a7b6a7-3732-4aa5-bd5d-cf4b602c8f53 # video
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 05907907-6b4a-4c92-94cc-7ac0617f6ab8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 70e5a30a-f713-461b-8523-d88d838929b6
+        userCondition: null
+handle: videoDocumentation
+hasTitleField: true
+icon: null
+name: 'Video Documentation'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

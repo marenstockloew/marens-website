@@ -1,0 +1,67 @@
+color: null
+fieldLayouts:
+  81e94d78-5779-429e-9694-b3b71a5a9bcd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-29T13:27:20+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: faf0a1b3-3995-4363-84f5-a77dd24b499e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-29T13:28:44+00:00'
+            elementCondition: null
+            fieldUid: d652b09e-4407-488c-90fc-c038f5938da1
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72d6268c-52ce-4ff8-ba97-5a28d1d08643
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dd06e37a-50cc-4ae5-b7f5-d47b80a51ad1
+        userCondition: null
+handle: documentation
+hasTitleField: true
+icon: null
+name: Documentation
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

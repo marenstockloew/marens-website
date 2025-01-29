@@ -1,4 +1,4 @@
-dateModified: 1737624606
+dateModified: 1738160881
 email:
   fromEmail: m.stockloew@posteo.de
   fromName: 'Maren Stockloew'
@@ -14,11 +14,19 @@ fs:
 meta:
   __names__:
     2e66a0a9-7e7f-40b9-81b7-65f65b6ccdbb: Home # Home
+    3dd34e1d-7171-433f-8e1c-8e5291ccb305: 'Type of Project' # Type of Project
+    3ee036a1-9422-4ec2-946f-87118d2c4ecb: 'Additional Text' # Additional Text
     7a9eddca-3108-4430-9030-e003f11e45c5: Description # Description
     7dd3e362-d5d2-415e-aaed-53812590be80: 'Maren Stockloew' # Maren Stockloew
     23d4a548-cc01-4c65-88d6-357e8bf9ab03: Home # Home
+    30b8d763-f13a-4728-8135-31733278145a: Documentation # Documentation
+    37af82c0-aca2-4be3-ae9e-16b04c19e51e: 'Photo Documentation' # Photo Documentation
+    44bc1bf7-525f-4228-81bd-3e0e7b68d6fe: Link # Link
     52d52080-5a3c-441e-b914-e2358048e571: Images # Images
+    55a4d3e9-1cc7-41d1-9db1-3606e577b4ed: 'Video Documentation' # Video Documentation
     85e6efbc-d153-40ca-ae05-3328484347df: Maren # Maren
+    93eeb673-38e7-4908-b833-dc48fcea85ba: Photos # Photos
+    115cb64b-38a7-436d-b61a-9785f72c8632: Details # Details
     982a374f-5ed2-4c17-8d44-3a783aafbbdb: 'Home Highlighted' # Home Highlighted
     8884bd11-26d3-4431-8ae6-84a615b9f9c7: Works # Works
     a3cd7fd4-adda-4bd5-ad5e-f3ca6b60f9fa: 'Home Text' # Home Text
@@ -26,8 +34,14 @@ meta:
     ae30c4b0-e3e5-42b9-95ad-81c483027d05: Maren-Description # Maren-Description
     b4f4cfbe-6ace-4e6d-a8ad-5ce04778a573: 'Public Schema' # Public Schema
     b9a7fc8a-cc72-4eaf-a3cf-58894d45546c: 'About Description' # About Description
+    d1ba6304-274a-4ccd-a9ff-90a0dc427280: 'Date of Presentation' # Date of Presentation
+    d5e0dc77-8128-48ee-8fcd-089b6bdae2b9: Link # Link
+    da68aa9e-9c82-430e-9938-1f3eb161981c: 'External Links' # External Links
     db0da511-ac83-4cbc-8b72-9059a42b9c27: 'Maren Stockloew' # Maren Stockloew
+    e85b1053-409d-4874-8136-0253a2c94862: 'Publishing or Showcase Date' # Publishing or Showcase Date
+    e3914e52-af22-4ecb-871c-8433ba2a5ee1: Date # Date
     eb161b0d-017a-4647-bd8a-0903d191e36e: Works # Works
+    f2a7b6a7-3732-4aa5-bd5d-cf4b602c8f53: video # video
     f30d7b9a-a104-45e7-ba60-97fc21dd8bee: Simple # Simple
 plugins:
   ckeditor:

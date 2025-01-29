@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  3167bd8c-e7b1-4f38-98dd-a7364ac78cb5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-29T13:26:41+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f5ec404a-ec6e-403c-be95-ad9e12a83a01
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 339fb441-4b46-4ec2-84a4-0aebe671bc09
+        userCondition: null
+handle: projectType
+hasTitleField: true
+icon: null
+name: 'Type of Project'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
