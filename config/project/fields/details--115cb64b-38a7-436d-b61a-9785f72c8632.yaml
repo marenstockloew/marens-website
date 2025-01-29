@@ -12,6 +12,9 @@ settings:
         -
           - uid
           - e3914e52-af22-4ecb-871c-8433ba2a5ee1 # Date
+        -
+          - handle
+          - exhibitionDate
     -
       __assoc__:
         -
