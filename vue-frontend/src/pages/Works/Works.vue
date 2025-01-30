@@ -2,7 +2,7 @@
   <div v-if="result" class="content">
     <ul v-if="result && result.entries">
       <li v-for="entry of result.entries" :key="entry.id">
-        <img :src="entry.mainImage[0].url" class="mainImage" />
+        <img :src="entry.mainImage[0].url" class="mainImage" :alt="entry.mainImage[0].title"/>
         <h2>
           <router-link
             :to="{ name: 'WorkDetails', params: { slug: entry.slug } }"
@@ -10,7 +10,7 @@
             >{{ entry.title }}</router-link
           >
         </h2>
-        <p>{{ entry.description }}</p>
+        <p class="text">{{ entry.description }}</p>
       </li>
     </ul>
   </div>
@@ -30,6 +30,7 @@ const { result } = useQuery(gql`
         description
         mainImage {
           url
+          title
         }
       }
     }
@@ -49,7 +50,7 @@ li {
   margin-bottom: 7.5rem;
 }
 .mainImage {
-  width: 100%;
+  width: 60%;
   aspect-ratio: 7/5;
   object-fit: cover;
   border-radius: 0.15rem;

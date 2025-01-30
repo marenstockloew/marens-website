@@ -1,10 +1,11 @@
 <template>
   <div v-if="currentWorkDetails" class="content">
-    <img :src="currentWorkDetails.mainImage[0].url" class="mainImage" />
-    <h2>{{ currentWorkDetails.title }}</h2>
     <div class="text">
+      <h2>{{ currentWorkDetails.title }}</h2>
       <p>{{ currentWorkDetails.description }}</p>
     </div>
+    <img :src="currentWorkDetails.mainImage[0].url" class="imageRoll" :alt="currentWorkDetails.mainImage[0].title" />
+    {{ currentWorkDetails.details }}
   </div>
   <div v-else class="content">
     Could not find this artwork.
@@ -35,6 +36,33 @@ const SELECTED_WORK_DETAILS_QUERY = gql`
           title
           url
         }
+        details {
+          ... on exhibitionDate_Entry {
+            typeHandle
+            title
+            date
+          }
+          ... on additionalText_Entry {
+            typeHandle
+            title
+            description
+          }
+          ... on photoDocumentation_Entry {
+            typeHandle
+            title
+            photos {
+              title
+              url
+            }
+          }
+          ... on videoDocumentation_Entry {
+            typeHandle
+            title
+            video {
+              url
+            }
+          }
+        }
       }
     }
   }
@@ -52,67 +80,22 @@ selectCurrentSlug(currentSlugValue);
 
 const currentWorkDetails = computed(() => result.value?.entries[0] ?? null);
 
-// watch(result, value => {
-//   currentWorkDetails = value;
-//   currentWorkDetails = currentWorkDetails.entries[0]
-//   console.log(currentWorkDetails);
-//     })
-
-// onResult(queryResult => {
-//   currentWorkDetails = queryResult.data;
-//   console.log(currentWorkDetails)
-// })
-
-// query workDetails($slug: [String]) {
-//   entries(slug: $slug) {
-//     id
-//     title
-//     slug
-//     ... on works_Entry {
-//       description
-//       mainImage {
-//         title
-//         url
-//       }
-//       details {
-//         ... on exhibitionDate_Entry {
-//           typeHandle
-//           title
-//           date
-//         }
-//         ... on additionalText_Entry {
-//           typeHandle
-//           title
-//           description
-//         }
-//         ... on photoDocumentation_Entry {
-//           typeHandle
-//           title
-//           photos {
-//             title
-//             url
-//           }
-//         }
-//         ... on videoDocumentation_Entry {
-//           typeHandle
-//           title
-//           video {
-//             url
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 </script>
 
 <style scoped>
-.mainImage {
+.content {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imageRoll {
+  width: 90vw;
   aspect-ratio: 7/5;
   object-fit: cover;
   border-radius: 0.15rem;
   opacity: 0.9;
+  margin: 3rem;
 }
 .p5canvas {
   display: none !important;

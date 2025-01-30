@@ -1,7 +1,7 @@
 <template>
-  <div v-if="result" class="content">
+  <div v-if="result" class="content text">
     <h2>{{ result.entries[0].title }}</h2>
-    <div v-html="result.entries[0].aboutDescription" class="text"></div>
+    <div v-html="result.entries[0].aboutDescription"></div>
   </div>
 </template>
 

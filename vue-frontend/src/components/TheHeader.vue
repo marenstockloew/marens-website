@@ -50,7 +50,7 @@ a.router-link-exact-active {
   color: var(--hell);
 }
 .big {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
 }
 .center {
   justify-content: center;

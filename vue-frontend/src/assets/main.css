@@ -8,7 +8,10 @@
 
 .content {
   margin: 10rem auto;
-  width: 70ch
+}
+.text {
+  width: 70ch;
+  max-width: 80vw;
 }
 
 a {
@@ -25,7 +28,7 @@ strong {
 }
 
 h1, h2, h3, h4 {
-  letter-spacing: 1rem;
+  letter-spacing: 1.5rem;
 }
 h2 {
   margin: 2.5rem auto;
