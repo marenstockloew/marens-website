@@ -15,6 +15,7 @@
 <script setup>
 // https://apollo.vuejs.org/guide-composable/query
 // CAREFUL: Craft wants a [String] as variable type
+// Use computed property for the result
 import { computed } from "vue";
 import { useQuery } from "@vue/apollo-composable";
 import { gql } from "graphql-tag";
