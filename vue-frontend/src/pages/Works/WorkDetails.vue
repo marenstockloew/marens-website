@@ -1,8 +1,8 @@
 <template>
   <div v-if="currentWorkDetails" class="content">
+    <img :src="currentWorkDetails.mainImage[0].url" class="mainImage" />
     <h2>{{ currentWorkDetails.title }}</h2>
     <div class="text">
-      <img :src="currentWorkDetails.mainImage[0].url" class="mainImage" />
       <p>{{ currentWorkDetails.description }}</p>
     </div>
   </div>

@@ -55,9 +55,6 @@ li {
   border-radius: 0.15rem;
   opacity: 0.9;
 }
-h2 {
-  margin: 2rem;
-}
 canvas {
   display: none !important;
 }
