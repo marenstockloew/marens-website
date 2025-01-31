@@ -2,10 +2,17 @@
   <div v-if="currentWorkDetails" class="content">
     <div class="text">
       <h2>{{ currentWorkDetails.title }}</h2>
-      <p>{{ currentWorkDetails.description }}</p>
+      <div v-for="element of currentWorkDetails.details" :key="element.id">
+        <h3 v-if="element.title">{{ element.title }}</h3>
+        <datetime v-if="element.typeHandle === 'exhibitionDate'">{{ element.date }}</datetime>
+        <p v-if="element.typeHandle === 'additionalText'">{{ element.description }}</p>
+        <div v-if="element.typeHandle === 'photoDocumentation'">
+          <img v-for="photo of element.photos" :src="photo.url" :alt="photo.title" class="imageRoll"/>
+        </div>
+        <div v-if="element.typeHandle === 'videoDocumentation'">{{ element }}></div>
+      </div>
     </div>
-    <img :src="currentWorkDetails.mainImage[0].url" class="imageRoll" :alt="currentWorkDetails.mainImage[0].title" />
-    {{ currentWorkDetails.details }}
+    <!-- <img :src="currentWorkDetails.mainImage[0].url" class="imageRoll" :alt="currentWorkDetails.mainImage[0].title" /> -->
   </div>
   <div v-else class="content">
     Could not find this artwork.
@@ -90,12 +97,11 @@ const currentWorkDetails = computed(() => result.value?.entries[0] ?? null);
   align-items: center;
 }
 .imageRoll {
-  width: 90vw;
+  height: 90vh;
   aspect-ratio: 7/5;
   object-fit: cover;
   border-radius: 0.15rem;
-  opacity: 0.9;
-  margin: 3rem;
+  margin: 3rem 0;
 }
 .p5canvas {
   display: none !important;

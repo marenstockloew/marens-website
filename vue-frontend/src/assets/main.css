@@ -27,11 +27,11 @@ strong {
   font-weight: bold;
 }
 
-h1, h2, h3, h4 {
-  letter-spacing: 1.5rem;
+h1, h2 {
+  letter-spacing: 1rem;
 }
 h2 {
-  margin: 2.5rem auto;
+  margin: 2.5rem 0;
 }
 
 @media (hover: hover) {

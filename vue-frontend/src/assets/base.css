@@ -59,9 +59,13 @@
 
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--dunkel-opacity);
-
-  --color-text: var(--hell);
+  --color-background: var(--hell);
+  --color-text: var(--dunkel);
+  --color-header-text: var(--hellblau);
+  --color-header-active: var(--graulila);
+  --color-home-text: var(--hell);
+  --color-home-link: var(--roetlich);
+  --color-home-header-active: var(--hell);
 }
 
 *,

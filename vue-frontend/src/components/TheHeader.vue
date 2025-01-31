@@ -2,7 +2,7 @@
   <header>
     <ul class="header-list">
       <li class="big"><router-link :to="{ name: 'Works' }" @click="removeCanvas">works</router-link></li>
-      <li class="center"><router-link :to="{ name: 'Home' }">&#x1f343</router-link></li>
+      <li class="center"><router-link :to="{ name: 'Home' }">&#9926;</router-link></li> <!--  Blatt: &#x1f343 -->
       <li class="big right"><router-link :to="{ name: 'About' }" @click="removeCanvas">about</router-link></li>
     </ul>
   </header>
@@ -33,7 +33,7 @@ header {
     font-size: 2rem;
 }
 .header-list a {
-  color: var(--hellblau);
+  color: var(--color-header-text);
 }
 .header-list li {
  width: 20vw;
@@ -43,11 +43,10 @@ header {
 .header-list a:hover {
   text-decoration: none;
   font-family: var(--header-hover), sans-serif;
-  color: var(--hell);
 }
 a.router-link-exact-active {
   font-family: var(--header-hover), sans-serif;
-  color: var(--hell);
+  color: var(--color-header-active);
 }
 .big {
   font-size: 2.5rem;
@@ -56,7 +55,7 @@ a.router-link-exact-active {
   justify-content: center;
 }
 .center:hover {
-  font-size: 120%;
+  font-size: 80%;
 }
 .right {
   justify-content: right;
