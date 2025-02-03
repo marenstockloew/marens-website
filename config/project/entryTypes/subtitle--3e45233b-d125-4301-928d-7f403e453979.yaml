@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  21ec55f2-ee8f-4e78-a0c3-8e69c38ab0b3:
+  de57b322-536a-40fe-a315-c60ce32ee0b3:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-02-03T16:39:47+00:00'
+            dateAdded: '2025-02-03T17:04:25+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,33 +31,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 1b077db6-c57c-400f-af30-bb9d546df150
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-01-29T14:05:53+00:00'
-            elementCondition: null
-            fieldUid: 44bc1bf7-525f-4228-81bd-3e0e7b68d6fe # Link
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 4e80ac23-bea1-4297-a0f8-3f4e476ce8af
+            uid: b9d8e2f2-d1b7-4e49-8531-a87b4cdd4c56
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: e3017bd2-d241-409b-b89d-2dcc05189469
+        uid: d68f38e4-5490-4e93-80af-46cdd59874cb
         userCondition: null
-handle: link
+handle: subtitle
 hasTitleField: true
 icon: null
-name: Link
+name: Subtitle
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

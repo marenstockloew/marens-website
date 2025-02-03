@@ -25,6 +25,11 @@ settings:
         -
           - uid
           - 37af82c0-aca2-4be3-ae9e-16b04c19e51e # Photo Documentation
+    -
+      __assoc__:
+        -
+          - uid
+          - 840ff32a-5a9b-4159-8805-c25dfeb62502 # Space
   includeTableView: false
   maxEntries: null
   minEntries: null

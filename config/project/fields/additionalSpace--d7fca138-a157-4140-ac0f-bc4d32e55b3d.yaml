@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: additionalSpace
+instructions: 'Gives an empty space of 5rem.'
+name: 'Additional Space'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Add additional Space'
+        -
+          - value
+          - addAdditionalSpace
+        -
+          - default
+          - '1'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons
