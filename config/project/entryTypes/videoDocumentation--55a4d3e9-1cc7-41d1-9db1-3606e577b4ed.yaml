@@ -38,7 +38,7 @@ fieldLayouts:
           -
             dateAdded: '2025-01-29T14:00:30+00:00'
             elementCondition: null
-            fieldUid: f2a7b6a7-3732-4aa5-bd5d-cf4b602c8f53 # video
+            fieldUid: f2a7b6a7-3732-4aa5-bd5d-cf4b602c8f53
             handle: null
             includeInCards: false
             instructions: null

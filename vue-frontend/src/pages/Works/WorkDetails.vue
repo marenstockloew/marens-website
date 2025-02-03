@@ -9,7 +9,6 @@
         <div v-if="element.typeHandle === 'photoDocumentation'">
           <img v-for="photo of element.photos" :src="photo.url" :alt="photo.title" class="imageRoll"/>
         </div>
-        <div v-if="element.typeHandle === 'videoDocumentation'">{{ element }}></div>
       </div>
     </div>
     <!-- <img :src="currentWorkDetails.mainImage[0].url" class="imageRoll" :alt="currentWorkDetails.mainImage[0].title" /> -->

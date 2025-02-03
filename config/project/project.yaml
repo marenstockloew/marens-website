@@ -1,4 +1,4 @@
-dateModified: 1738167957
+dateModified: 1738597709
 email:
   fromEmail: m.stockloew@posteo.de
   fromName: 'Maren Stockloew'
@@ -41,7 +41,6 @@ meta:
     e85b1053-409d-4874-8136-0253a2c94862: 'Publishing or Showcase Date' # Publishing or Showcase Date
     e3914e52-af22-4ecb-871c-8433ba2a5ee1: Date # Date
     eb161b0d-017a-4647-bd8a-0903d191e36e: Works # Works
-    f2a7b6a7-3732-4aa5-bd5d-cf4b602c8f53: video # video
     f30d7b9a-a104-45e7-ba60-97fc21dd8bee: Simple # Simple
 plugins:
   ckeditor:
