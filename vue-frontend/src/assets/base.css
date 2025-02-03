@@ -38,10 +38,11 @@
 
 /* text variables */
 :root {
-  --base-font: openSans;
+  --base-font: terminalGrotesque;
   --header-font: terminalGrotesqueOpen;
   --header-hover: terminalGrotesque;
-  --home-font: openSans;
+  --home-font: terminalGrotesqueOpen;
+  --text-header-font: terminalGrotesqueOpen;
   --font-main: 18px;
 }
 
@@ -79,9 +80,8 @@
 body {
   color: var(--color-text);
   background: var(--color-background);
-  transition: color 0.5s, background-color 0.5s;
+  transition: all 5s;
   line-height: 1.5;
-  letter-spacing: 0.025rem;
   font-family: var(--base-font), sans-serif;
   font-size: var(--font-main);
   text-rendering: optimizeLegibility;

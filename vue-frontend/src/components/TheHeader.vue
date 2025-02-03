@@ -34,6 +34,11 @@ header {
 }
 .header-list a {
   color: var(--color-header-text);
+  -webkit-transition: all .25s ease;
+ -moz-transition: all .25s ease;
+ -o-transition: all .25s ease;
+ -ms-transition:all .25s ease;
+ transition: all .25s ease;
 }
 .header-list li {
  width: 20vw;
@@ -42,9 +47,9 @@ header {
 }
 .header-list a:hover {
   text-decoration: none;
-  font-family: var(--header-hover), sans-serif;
+  font-size: 97%;
 }
-a.router-link-exact-active {
+.header-list a.router-link-exact-active {
   font-family: var(--header-hover), sans-serif;
   color: var(--color-header-active);
 }
@@ -53,9 +58,6 @@ a.router-link-exact-active {
 }
 .center {
   justify-content: center;
-}
-.center:hover {
-  font-size: 80%;
 }
 .right {
   justify-content: right;

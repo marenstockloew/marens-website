@@ -74,8 +74,15 @@ canvas {
 }
 .work-link:hover {
   text-decoration: none;
-  letter-spacing: 2rem;
+  letter-spacing: 1.5rem;
   /* font-weight: bold; */
+}
+.work-link {
+  -webkit-transition: letter-spacing 1s ease-in-out;
+ -moz-transition: letter-spacing 1s ease-in-out;
+ -o-transition: letter-spacing 1s ease-in-out;
+ -ms-transition:letter-spacing 1s ease-in-out;
+ transition: letter-spacing 1s ease-in-out;
 }
 p {
   padding-left: 2rem;
