@@ -1,13 +1,12 @@
 <template>
   <div v-if="result" class="content">
     <ul v-if="result && result.entries">
-      <li v-for="(entry,index) of result.entries" :key="entry.id">
+      <li v-for="entry of result.entries" :key="entry.id">
         <router-link
           :to="{ name: 'WorkDetails', params: { slug: entry.slug } }"
           class="work-link"
         >
           <works-card
-            bgColor="--color-works-bg-alternating"
             :worksMainImageUrl="entry.mainImage[0].url"
             :worksMainImageTitle="entry.mainImage[0].title"
             :worksTitle="entry.title"

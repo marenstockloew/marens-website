@@ -1,5 +1,5 @@
 <template>
-  <div :style="worksColorIndex % 2 ? `background-color: var(${bgColor})` : `background-color: var(--color-background)`">
+  <div>
     <img
       :src="worksMainImageUrl"
       :alt="worksMainImageTitle"
@@ -14,10 +14,6 @@
 
 <script setup>
 defineProps({
-  bgColor: {
-    type: String,
-    default: "--color-background",
-  },
   worksMainImageUrl: String,
   worksMainImageTitle: String,
   worksTitle: String,
@@ -29,12 +25,19 @@ defineProps({
 <style scoped>
 div {
   padding-bottom: 10rem;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+div:hover {
+    background-color: var(--color-works-hover-card);
 }
 .mainImage {
   width: 100%;
   aspect-ratio: 7/5;
   object-fit: cover;
-  opacity: 0.9;
 }
 h2,
 p {

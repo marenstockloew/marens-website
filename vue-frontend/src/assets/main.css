@@ -7,7 +7,7 @@
 }
 
 .content {
-  margin: 10rem auto;
+  margin: 10rem auto 0 auto;
 }
 .text {
   width: 70ch;
@@ -18,14 +18,9 @@ a {
   text-decoration: none;
   color: var(--color-text);
 }
-
-p {
-  margin: .5rem 0;
-}
 strong {
   font-weight: bold;
 }
-
 h1 {
   letter-spacing: 0.75rem;
   font-family: var(--text-header-font);
