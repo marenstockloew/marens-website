@@ -8,10 +8,9 @@
           >works</router-link
         >
       </li>
-      <li class="center">
-        <router-link :to="{ name: 'Home' }">&#9926;</router-link>
+      <li class="big center">
+        <router-link :to="{ name: 'Home' }">&#9729;</router-link>
       </li>
-      <!--  Blatt: &#x1f343 -->
       <li class="big right">
         <router-link :to="{ name: 'About' }" @click="removeCanvas"
           >about</router-link
@@ -57,6 +56,7 @@ header {
   width: 20vw;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .header-list a:hover {
   text-decoration: none;
@@ -67,10 +67,11 @@ header {
   color: var(--color-header-active);
 }
 .big {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 .center {
   justify-content: center;
+  transform: translateY(0.75rem);
 }
 .right {
   justify-content: right;
