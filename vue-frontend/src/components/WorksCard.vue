@@ -53,7 +53,7 @@ h2 {
   -ms-transition: letter-spacing 1s ease-in-out;
   transition: letter-spacing 1s ease-in-out;
 }
-h2:hover {
+div:hover > h2 {
   text-decoration: none;
   letter-spacing: 1.5rem;
 }
