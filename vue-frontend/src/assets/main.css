@@ -26,12 +26,9 @@ strong {
   font-weight: bold;
 }
 
-h1, h2 {
+h1 {
   letter-spacing: 0.75rem;
   font-family: var(--text-header-font);
-}
-h2 {
-  margin: 2.5rem 0;
 }
 h3 {
   font-family: var(--text-header-font);

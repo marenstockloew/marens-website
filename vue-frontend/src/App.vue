@@ -7,6 +7,4 @@
 
 import TheHeader from './components/TheHeader.vue';
 
-components: TheHeader;
-
 </script>

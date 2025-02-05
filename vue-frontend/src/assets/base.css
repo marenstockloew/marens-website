@@ -50,6 +50,7 @@
 :root {
   --hell: #fefefc;
   --hellblau: #b4b5c9;
+  --hellblau-opacity: #b4b5c9CC;
   --rosa: #ffd1c7;
   --altrosa: #8f6978;
   --roetlich: #c16864;
@@ -67,6 +68,7 @@
   --color-home-text: var(--hell);
   --color-home-link: var(--roetlich);
   --color-home-header-active: var(--hell);
+  --color-works-bg-alternating: var(--hellblau-opacity);
 }
 
 *,
