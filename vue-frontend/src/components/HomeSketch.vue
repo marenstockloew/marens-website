@@ -1,3 +1,5 @@
+<!-- The p5.js sketch for drawing the clouds -->
+
 <template></template>
 
 <script setup>

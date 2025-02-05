@@ -7,20 +7,9 @@
 
 <script setup>
 import { useQuery } from "@vue/apollo-composable";
-import { gql } from "graphql-tag";
+import { ABOUT_FIELDS_QUERY } from "@/queries/about_query";
 
-const { result } = useQuery(gql`
-  query about {
-    entries(section: "maren") {
-      id
-      title
-      url
-      ... on marenDescription_Entry {
-        aboutDescription
-      }
-    }
-  }
-`);
+const { result } = useQuery(ABOUT_FIELDS_QUERY);
 </script>
 
 <style scoped>

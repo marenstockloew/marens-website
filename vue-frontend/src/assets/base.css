@@ -38,10 +38,10 @@
 
 /* text variables */
 :root {
-  --base-font: terminalGrotesque;
+  --base-font: openSans;
   --header-font: terminalGrotesqueOpen;
   --header-hover: terminalGrotesque;
-  --home-font: terminalGrotesqueOpen;
+  --home-font: openSans
   --text-header-font: terminalGrotesqueOpen;
   --font-main: 18px;
 }

@@ -21,22 +21,10 @@
 
 <script setup>
 import { useQuery } from "@vue/apollo-composable";
-import { gql } from "graphql-tag";
 import HomeSketch from "@/components/HomeSketch.vue";
+import { HOME_FIELDS_QUERY } from "@/queries/home_query";
 
-const { result } = useQuery(gql`
-  query home {
-    entries(section: "home") {
-      id
-      title
-      url
-      ... on home_Entry {
-        homeText
-        homeHighlighted
-      }
-    }
-  }
-`);
+const { result } = useQuery(HOME_FIELDS_QUERY);
 
 function scrollToTop() {
   window.scrollTo({

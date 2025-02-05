@@ -34,63 +34,13 @@
 </template>
 
 <script setup>
-// https://apollo.vuejs.org/guide-composable/query
 // CAREFUL: Craft wants a [String] as variable type
-// Use computed property for the result
 import { computed } from "vue";
 import { useQuery } from "@vue/apollo-composable";
-import { gql } from "graphql-tag";
+import { SELECTED_WORK_DETAILS_QUERY } from "@/queries/work_details_query";
 
 const props = defineProps(["slug"]);
-const currentSlugValue = props.slug;
-
-const SELECTED_WORK_DETAILS_QUERY = gql`
-  query workDetails($slug: [String]) {
-    entries(slug: $slug) {
-      id
-      title
-      slug
-      ... on works_Entry {
-        description
-        mainImage {
-          title
-          url
-        }
-        details {
-          ... on exhibitionDate_Entry {
-            typeHandle
-            title
-            date @formatDateTime(format: "m/Y")
-            description
-            externalLinks {
-              ... on link_Entry {
-                title
-                externalLink
-              }
-            }
-          }
-          ... on additionalText_Entry {
-            typeHandle
-            title
-            description
-          }
-          ... on photoDocumentation_Entry {
-            typeHandle
-            title
-            photos {
-              title
-              url
-            }
-          }
-          ... on space_Entry {
-            typeHandle
-            additionalSpace
-          }
-        }
-      }
-    }
-  }
-`;
+const currentSlugValue = props.slug;;
 
 const { result, variables } = useQuery(SELECTED_WORK_DETAILS_QUERY);
 
@@ -103,12 +53,6 @@ function selectCurrentSlug(slug) {
 selectCurrentSlug(currentSlugValue);
 
 const currentWorkDetails = computed(() => result.value?.entries[0] ?? null);
-
-// for (const element of currentWorkDetails) {
-//   console.log(element);
-// }
-// for (currentWorkDetails.typeHandle === 'additionalText) {
-// }
 </script>
 
 <style scoped>

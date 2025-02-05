@@ -16,6 +16,11 @@ There's the landing page, the 'works' and the 'about' section. The 'works' secti
 
 https://medium.com/front-end-weekly/learning-the-p5-canvas-drawing-library-in-es6-and-webpack-bf514a679544
 
+## Craft CMS and GraphQL Queries
+
+https://apollo.vuejs.org/guide-composable/query
+https://enterprisevue.dev/blog/integrating-graphql-with-vue-3/
+
 # FOLDER STRUCTURE
 
 The whole frontend code is in the 'vue-frontend' folder. There is no relevant content in the templates folder. The whole Craft CMS backend is configured through the Craft CMS control panel. 
@@ -33,6 +38,10 @@ All components. The Home Sketch and the Global Header.
 # Pages
 
 Home, About, Works, Work, Not Found
+
+# Queries
+
+All GraphQL queries for the pages.
 
 # App.vue
 

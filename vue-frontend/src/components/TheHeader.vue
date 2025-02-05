@@ -1,3 +1,5 @@
+<!-- HEADER: Links to the three pages WORKS, HOME and ABOUT -->
+
 <template>
   <header>
     <ul class="header-list">

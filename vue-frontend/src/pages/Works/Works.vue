@@ -27,24 +27,8 @@
 
 <script setup>
 import { useQuery } from "@vue/apollo-composable";
-import { gql } from "graphql-tag";
-
-const { result } = useQuery(gql`
-  query works {
-    entries(section: "works") {
-      id
-      title
-      slug
-      ... on works_Entry {
-        description
-        mainImage {
-          url
-          title
-        }
-      }
-    }
-  }
-`);
+import { WORKS_OVERVIEW_QUERY } from "@/queries/works_overview_query";
+const { result } = useQuery(WORKS_OVERVIEW_QUERY);
 </script>
 
 <style scoped>
