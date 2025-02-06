@@ -18,7 +18,6 @@ defineProps({
   worksMainImageTitle: String,
   worksTitle: String,
   worksDescription: String,
-  worksColorIndex: Number,
 });
 </script>
 
