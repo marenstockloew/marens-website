@@ -9,7 +9,7 @@ const route = useRoute();
 
 let s = (sk) => {
   sk.setup = () => {
-    sk.createCanvas(document.body.clientWidth, window.innerHeight);
+    sk.createCanvas(document.body.clientWidth, document.body.clientWidth*9.5);
   };
   let task_done = false;
   let last_done = 0;
@@ -28,7 +28,7 @@ let s = (sk) => {
   sk.mousePressed = () => {
     let currentRouteName = route.name;
     if (currentRouteName == "Home") {
-      sk.createCanvas(document.body.clientWidth, window.innerHeight);
+      sk.createCanvas(document.body.clientWidth, document.body.clientWidth*9.5);
     }
   };
   sk.display = () => {

@@ -38,6 +38,7 @@ function scrollToTop() {
 <style scoped>
 .home-container {
   width: 100%;
+  aspect-ratio: 2/19;
   position: fixed;
   right: 0;
   bottom: 2rem;

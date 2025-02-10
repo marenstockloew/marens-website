@@ -9,7 +9,7 @@
         >
       </li>
       <li class="center">
-        <router-link :to="{ name: 'Home' }">&#127811;</router-link>
+        <router-link :to="{ name: 'Home' }" >&#127811;</router-link>
       </li>
       <li class="big right">
         <router-link :to="{ name: 'About' }" @click="removeCanvas"
