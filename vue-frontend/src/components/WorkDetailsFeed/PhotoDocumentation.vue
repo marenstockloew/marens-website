@@ -1,4 +1,5 @@
 <template>
+  <h3 v-if="workDetailsTitle">{{ workDetailsTitle }}</h3>
   <img
     v-for="photo of workDetailsPhotos"
     :src="photo.url"
@@ -9,6 +10,7 @@
 
 <script setup>
 defineProps({
+  workDetailsTitle: String,
   workDetailsPhotos: Array,
 });
 </script>

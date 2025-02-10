@@ -1,5 +1,6 @@
 <template>
-  <div class="exhibition-info">
+  <div>
+    <h3>{{ workDetailsTitle }}</h3>
     <datetime>{{ workDetailsDate }}</datetime>
     <p>{{ workDetailsDateDescription }}</p>
     <p v-for="link in workDetailsDateLinks">
@@ -10,6 +11,7 @@
 
 <script setup>
 defineProps({
+  workDetailsTitle: String,
   workDetailsDate: Date,
   workDetailsDateDescription: String,
   workDetailsDateLinks: Array,
@@ -20,8 +22,8 @@ defineProps({
 datetime {
   text-decoration: underline;
 }
-.exhibition-info {
+div {
   font-size: 0.9rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 </style>

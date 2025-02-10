@@ -5,30 +5,28 @@
 
       <!-- Loop over all Matrix fields -->
       <div v-for="element of currentWorkDetails.details" :key="element.id">
-        <!-- Headings -->
-        <h3 v-if="element.title">{{ element.title }}</h3>
-
         <!-- Dates -->
         <exhibition-date
           v-if="element.typeHandle === 'exhibitionDate'"
+          :workDetailsTitle="element.title"
           :workDetailsDate="element.date"
           :workDetailsDateDescription="element.description"
           :workDetailsDateLinks="element.externalLinks"
         ></exhibition-date>
 
         <!-- Descriptions -->
-        <p v-if="element.typeHandle === 'additionalText'" class="description">
-          {{ element.description }}
-        </p>
+        <additional-text
+          v-if="element.typeHandle === 'additionalText'"
+          :additionalTextTitle="element.title"
+          :additionalTextDescription="element.description"
+        ></additional-text>
 
         <!-- Photos -->
         <photo-documentation
           v-if="element.typeHandle === 'photoDocumentation'"
+          :workDetailsTitle="element.title"
           :workDetailsPhotos="element.photos"
         ></photo-documentation>
-
-        <!-- Extra Space -->
-        <div v-if="element.typeHandle === 'space'" class="space"></div>
       </div>
     </div>
   </div>
@@ -42,6 +40,7 @@
 
 <script setup>
 import ExhibitionDate from "@/components/WorkDetailsFeed/ExhibitionDate.vue";
+import additionalText from "@/components/WorkDetailsFeed/additionalText.vue";
 import PhotoDocumentation from "@/components/WorkDetailsFeed/PhotoDocumentation.vue";
 import { computed } from "vue";
 import { useQuery } from "@vue/apollo-composable";
@@ -70,9 +69,6 @@ const currentWorkDetails = computed(() => result.value?.entries[0] ?? null);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.space {
-  height: 5rem;
 }
 .p5canvas {
   display: none !important;

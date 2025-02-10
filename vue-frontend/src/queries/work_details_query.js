@@ -38,10 +38,6 @@ const SELECTED_WORK_DETAILS_QUERY = gql`
               url
             }
           }
-          ... on space_Entry {
-            typeHandle
-            additionalSpace
-          }
         }
       }
     }
