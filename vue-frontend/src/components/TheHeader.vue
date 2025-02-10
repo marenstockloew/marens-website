@@ -8,8 +8,8 @@
           >works</router-link
         >
       </li>
-      <li class="big center">
-        <router-link :to="{ name: 'Home' }">&#9729;</router-link>
+      <li class="center">
+        <router-link :to="{ name: 'Home' }">&#127811;</router-link>
       </li>
       <li class="big right">
         <router-link :to="{ name: 'About' }" @click="removeCanvas"
@@ -71,7 +71,6 @@ header {
 }
 .center {
   justify-content: center;
-  transform: translateY(0.75rem);
 }
 .right {
   justify-content: right;
