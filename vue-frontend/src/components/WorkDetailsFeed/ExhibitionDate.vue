@@ -23,7 +23,7 @@ datetime {
   text-decoration: underline;
 }
 div {
-  font-size: 0.9rem;
+  font-size: 90%;
   margin: 2rem 0;
 }
 </style>

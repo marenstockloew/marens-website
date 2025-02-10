@@ -28,7 +28,7 @@ let s = (sk) => {
   sk.mousePressed = () => {
     let currentRouteName = route.name;
     if (currentRouteName == "Home") {
-      sk.createCanvas(document.body.clientWidth, document.body.clientWidth*9.5);
+      sk.createCanvas(document.body.clientWidth,document.body.clientWidth*9.5);
     }
   };
   sk.display = () => {

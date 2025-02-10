@@ -75,4 +75,20 @@ header {
 .right {
   justify-content: right;
 }
+@media (max-width: 600px) {
+  .header-list {
+    font-size: 1rem
+  }
+  .big {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .header-list {
+    font-size: 1.5rem
+  }
+  .big {
+    font-size: 3rem;
+  }
+}
 </style>

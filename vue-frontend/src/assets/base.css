@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: terminalGrotesqueOpen;
-  src: url("./fonts/terminal-grotesque_open.otf") format("opentype"),
+  src: url("./fonts/terminal-grotesque_open.otf") format("opentype");
 }
 @font-face {
   font-family: openSans;
@@ -43,7 +43,7 @@
   --header-hover: terminalGrotesque;
   --home-font: openSans;
   --text-header-font: openSansRegular;
-  --font-main: 18px;
+  --font-size-main: 1rem;
 }
 
 /* color variables */
@@ -56,7 +56,7 @@
   --roetlich: #c16864;
   --graulila: #4a3d4f;
   --dunkel: #1a1018;
-  --dunkel-opacity: #1a1018CC;
+  --dunkel-opacity: #1a1018cc;
 }
 
 /* semantic color variables for this project */
@@ -82,12 +82,26 @@ body {
   color: var(--color-text);
   background: var(--color-background);
   line-height: 1.5;
+  font-size: var(--font-size-main);
   font-family: var(--base-font), sans-serif;
-  font-size: var(--font-main);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Media Queries*/
+
+@media (max-width: 600px) {
+  body {
+    font-size: 75%;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    font-size: 85%;
+  }
+}
+
 /* For the future: dark mode? */
 
 /* @media (prefers-color-scheme: dark) {
