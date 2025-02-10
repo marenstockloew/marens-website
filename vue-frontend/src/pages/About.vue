@@ -1,5 +1,5 @@
 <template>
-  <div v-if="result" class="content text">
+  <div v-if="result" class="content text about-section">
     <h2>{{ result.entries[0].title }}</h2>
     <div v-html="result.entries[0].aboutDescription"></div>
   </div>
