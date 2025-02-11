@@ -47,6 +47,12 @@ h2 {
   letter-spacing: 0.75rem;
   font-family: var(--text-header-font);
 }
+/* Media Queries*/
+@media (max-width: 900px) {
+  h2 {
+    letter-spacing: 0.4rem;
+  }
+}
 div:hover > h2 {
   text-decoration: none;
 }
