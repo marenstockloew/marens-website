@@ -40,20 +40,14 @@ div:hover {
 }
 h2,
 p {
-  padding-left: 2rem;
+  padding: 0 2rem;
 }
 h2 {
   margin: 1rem 0;
   letter-spacing: 0.75rem;
   font-family: var(--text-header-font);
-  -webkit-transition: letter-spacing 1s ease-in-out;
-  -moz-transition: letter-spacing 1s ease-in-out;
-  -o-transition: letter-spacing 1s ease-in-out;
-  -ms-transition: letter-spacing 1s ease-in-out;
-  transition: letter-spacing 1s ease-in-out;
 }
 div:hover > h2 {
   text-decoration: none;
-  letter-spacing: 1.5rem;
 }
 </style>

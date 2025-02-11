@@ -90,15 +90,14 @@ body {
 }
 
 /* Media Queries*/
-
-@media (max-width: 600px) {
-  body {
-    font-size: 75%;
-  }
-}
 @media (max-width: 900px) {
   body {
     font-size: 85%;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 75%;
   }
 }
 

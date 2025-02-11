@@ -18,7 +18,7 @@ settings:
   previewMode: full
   restrictFiles: true
   restrictLocation: true
-  restrictedDefaultUploadSubpath: works
+  restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:52d52080-5a3c-441e-b914-e2358048e571' # Images
   restrictedLocationSubpath: '/{slug}'
   selectionLabel: null
